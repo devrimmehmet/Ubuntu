@@ -1,0 +1,1 @@
+Kaynakça olarak kullandığım görseller.
