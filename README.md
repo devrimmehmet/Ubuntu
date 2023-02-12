@@ -1,5 +1,5 @@
 # Ubuntu
 
 ## Installation
-- [x] [Ubuntu-Install](./Install-Ubuntu.md)
+- [x] [Ubuntu-Install](./Installation/Install-Ubuntu.md)
 - [ ] [Program Yüklemeleri](./readme.md)
