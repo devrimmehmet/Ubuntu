@@ -103,7 +103,7 @@ sudo service apache2 restart
 
 ```
 
-### CLI için PHP sürümü ayarlama
+### Setting PHP version for CLI
 ```BASH
 
 sudo update-alternatives --config php
@@ -127,9 +127,16 @@ Next,
 > Settings | Keyboard | Keyboard Shortcuts | View and Customize Shortcuts | Custom Shortcuts |
 A new shortcut is defined from the menu. To save these screenshots in the pictures directory, enter the following code in the COMMAND part:
 
-`sh -c 'gnome-screenshot -af /home/$USER/Pictures/$(date "+%Y.%m.%d-%H.%M.%S").png'`
+```BASH
 
-![Adding Keyboard Shortcut](https://github.com/HayatOkulum/Archive/blob/main/Images/2023.02.08-00.08.24.png)
+sh -c 'gnome-screenshot -af /home/$USER/Pictures/$(date "+%Y.%m.%d-%H.%M.%S").png
+
+
+```
+
+
+
+![Adding Keyboard Shortcut](https://raw.githubusercontent.com/devrimmehmet/Ubuntu/main/Images/Take-a-screenshot.png)
 I suggest you try this command in terminal first and test if your user account has access permission. If there is no image saved in the pictures folder when you test the command in the terminal, your user account does not have permission to access, you can use the following command to allow it.
 
 `sudo chmod ugo+rwx /home/$USER/Pictures/*`
@@ -138,7 +145,22 @@ If you consider removing it, you can use this code to block access again.
 
 `sudo chmod ugo-rwx /home/$USER/Pictures/*`
 
+## OBS Studio (Open Broadcaster Software) [Source](https://obsproject.com/download#linux)
 
+- `_sudo add-apt-repository ppa:obsproject/obs-studio_`
+- `_sudo apt update_`
+- `_sudo apt install ffmpeg obs-studio_`
+
+![OBS Studio](https://raw.githubusercontent.com/devrimmehmet/Ubuntu/main/Images/OBS.png)
+
+## Kdenlive [Source](https://launchpad.net/~kdenlive/+archive/ubuntu/kdenlive-stable)
+
+- `sudo add-apt-repository ppa:kdenlive/kdenlive-stable`
+- `sudo apt update`
+
+- `sudo apt install kdenlive`
+
+![Kdenlive](https://raw.githubusercontent.com/devrimmehmet/Ubuntu/main/Images/Kdenlive.png)
 
 
 
