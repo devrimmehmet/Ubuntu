@@ -129,13 +129,10 @@ A new shortcut is defined from the menu. To save these screenshots in the pictur
 
 ```BASH
 
-sh -c 'gnome-screenshot -af /home/$USER/Pictures/$(date "+%Y.%m.%d-%H.%M.%S").png
+sh -c 'gnome-screenshot -af /home/$USER/Pictures/$(date "+%Y.%m.%d-%H.%M.%S").png'
 
 
 ```
-
-
-
 ![Adding Keyboard Shortcut](https://raw.githubusercontent.com/devrimmehmet/Ubuntu/main/Images/Take-a-screenshot.png)
 I suggest you try this command in terminal first and test if your user account has access permission. If there is no image saved in the pictures folder when you test the command in the terminal, your user account does not have permission to access, you can use the following command to allow it.
 
@@ -161,6 +158,18 @@ If you consider removing it, you can use this code to block access again.
 - `sudo apt install kdenlive`
 
 ![Kdenlive](https://raw.githubusercontent.com/devrimmehmet/Ubuntu/main/Images/Kdenlive.png)
+## FileZilla [SOURCE](https://websetnet.net/tr/how-to-install-filezilla-on-ubuntu-20-10-transfer-files/)
 
+```BASH
+
+sudo apt update 
+sudo apt upgrade
+sudo add-apt-repository ppa:sicklylife/filezilla
+sudo apt update 
+sudo apt install filezilla
+
+```
+
+![FileZilla](https://raw.githubusercontent.com/devrimmehmet/Ubuntu/main/Images/filezilla.png)
 
 
