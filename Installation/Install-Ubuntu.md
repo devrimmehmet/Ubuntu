@@ -1,5 +1,6 @@
 # Ubuntu Install
 
+###### Boot the ubuntu iso file to a flash disk of at least 8 GB with a program such as rufus.
 ## Language Select : English 
 ## Keyboard Select : Tr
 ##  *~~Wifi Connection~~* Not Used
@@ -11,7 +12,7 @@
 **Your computer's name :** devrimpc
 **Pick a username:** devrim
 **Password:**  **** (Just Easy Pin)
-
+* Your password is something like a short pin. Your computer name and user name should be chosen as short as possible, with lowercase letters and without using Turkish characters.
 ---
 #### *~~Livepatch~~* Go Next Not Set Up
 #### Help improve Ubuntu 
