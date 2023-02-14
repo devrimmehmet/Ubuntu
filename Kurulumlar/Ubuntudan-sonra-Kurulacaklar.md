@@ -114,13 +114,16 @@ sudo update-alternatives --config php
 sudo update-alternatives --set php /usr/bin/php8.1
 
 ```
+### Bilgiler
+- `gnome-sushi` Programı: <kbd>space</kbd> (boşluk çubuğu) tuşu ile dosya ve klasör içeriğinin önizlemesini gösterir (MacOS'daki gibi)
+- `sudo snap refresh` Snap güncelleme uyarısı alındığında, açık tüm programlar kapatılır ve bu komut çalıştırılır
 
-## Bilgiler
 
-- Program  `gnome-sushi`: previews file and folder contents with <kbd>space</kbd> (like on MacOS)
- - `sudo snap refresh`  When a snap update alert is received, all open programs are closed and this command is run
+## İSTEĞE BAĞLI UYGULAMALAR
+###### Aşağıdaki Uygulamaları ihtiyacınız varsa yükleyiniz ne olduğunu anlamadığınız uygulamaları yüklemenize gerek yok.
 
-## Ekran Alıntısı Aracı
+
+### Ekran Alıntısı Aracı
 
 Shift+PrintScreen tuşuna aşağıdaki komut bağlanınca, bu tuşa basıldığında ekranın seçeceğimiz kısmın ekran görüntüsü diske kaydedilir. KAYNAK: https://askubuntu.com/a/1405337
 
@@ -143,7 +146,7 @@ Kaldırmayı düşünürseniz tekrar erişim engellemek için bu kodu kullanabil
 
 `sudo chmod ugo-rwx /home/$USER/Resimler/*`
 
-## OBS Studio (Open Broadcaster Software) Kurulumu [Kaynakça](https://obsproject.com/download#linux)
+### OBS Studio (Open Broadcaster Software) Kurulumu [Kaynakça](https://obsproject.com/download#linux)
 
 - `_sudo add-apt-repository ppa:obsproject/obs-studio_`
 - `_sudo apt update_`
@@ -151,7 +154,7 @@ Kaldırmayı düşünürseniz tekrar erişim engellemek için bu kodu kullanabil
 
 ![OBS Studio](https://raw.githubusercontent.com/devrimmehmet/Ubuntu/main/Images/OBS.png)
 
-## Kdenlive Kurulumu [Kaynakça](https://launchpad.net/~kdenlive/+archive/ubuntu/kdenlive-stable)
+### Kdenlive Kurulumu [Kaynakça](https://launchpad.net/~kdenlive/+archive/ubuntu/kdenlive-stable)
 
 - `sudo add-apt-repository ppa:kdenlive/kdenlive-stable`
 - `sudo apt update`
@@ -159,7 +162,7 @@ Kaldırmayı düşünürseniz tekrar erişim engellemek için bu kodu kullanabil
 - `sudo apt install kdenlive`
 
 ![Kdenlive](https://raw.githubusercontent.com/devrimmehmet/Ubuntu/main/Images/Kdenlive.png)
-## FileZilla Kurulumu [Kaynakça](https://websetnet.net/tr/how-to-install-filezilla-on-ubuntu-20-10-transfer-files/)
+### FileZilla Kurulumu [Kaynakça](https://websetnet.net/tr/how-to-install-filezilla-on-ubuntu-20-10-transfer-files/)
 
 ```BASH
 
