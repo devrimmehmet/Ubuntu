@@ -1,8 +1,8 @@
 # Ubuntu
 
 ## Kurulumlar
-- [x] [Ubuntu-Kurulumu](./kurulumlar/ubuntu-kurulumu.md)
-- [ ] [Ubuntu 22.04 versiyonunu kurduktan sonra kurulacaklar](./kurulumlar/ubuntudan-sonra-kurulacaklar.md)
+- [x] [Ubuntu-Kurulumu](./Kurulumlar/ubuntu-kurulumu.md)
+- [ ] [Ubuntu 22.04 versiyonunu kurduktan sonra kurulacaklar](./Kurulumlar/Ubuntudan-sonra-Kurulacaklar.md)
 
 ----
 
