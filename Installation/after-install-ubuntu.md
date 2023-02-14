@@ -1,5 +1,6 @@
 # What to do after Ubuntu 22.04 Installation
 ## Before Starting
+###### Run the commands below on the terminal screen. After your Ubuntu installation is complete, open the terminal and apply the following bash commands step by step in the terminal.
 ```BASH
 
 sudo apt update
@@ -46,7 +47,7 @@ sudo mysql_secure_installation
 ```
 
 *~~myRootPassword~~*: ****
-
+##### The password you enter while performing these operations is the root password. Do not forget to save.
 ```BASH
 
 sudo mysql -u root -p
@@ -55,6 +56,7 @@ sudo mysql -u root -p
     exit;
 ```
 *~~myRootPassword:~~* ****
+##### The password you enter while performing these operations is the root password. Do not forget to save.
 
 ## Install Some Featured Programs
 ```BASH
@@ -116,7 +118,10 @@ sudo update-alternatives --set php /usr/bin/php8.1
 - Program  `gnome-sushi`: previews file and folder contents with <kbd>space</kbd> (like on MacOS)
  - `sudo snap refresh`  When a snap update alert is received, all open programs are closed and this command is run
 
-## Take a screenshot
+## OPTIONAL APPS
+##### If you need the following applications, install them, you do not need to install applications that you do not understand.
+
+### Take a screenshot
 When the following command is connected to the Shift+PrintScreen key, the screenshot of the part of the screen we will select is saved to the disk when this key is pressed. [SOURCE](https://askubuntu.com/a/1405337)
 
 - `sudo apt install gnome-screenshot`
@@ -142,7 +147,7 @@ If you consider removing it, you can use this code to block access again.
 
 `sudo chmod ugo-rwx /home/$USER/Pictures/*`
 
-## OBS Studio (Open Broadcaster Software) [Source](https://obsproject.com/download#linux)
+### OBS Studio (Open Broadcaster Software) [Source](https://obsproject.com/download#linux)
 
 - `_sudo add-apt-repository ppa:obsproject/obs-studio_`
 - `_sudo apt update_`
@@ -150,7 +155,7 @@ If you consider removing it, you can use this code to block access again.
 
 ![OBS Studio](https://raw.githubusercontent.com/devrimmehmet/Ubuntu/main/Images/OBS.png)
 
-## Kdenlive [Source](https://launchpad.net/~kdenlive/+archive/ubuntu/kdenlive-stable)
+### Kdenlive [Source](https://launchpad.net/~kdenlive/+archive/ubuntu/kdenlive-stable)
 
 - `sudo add-apt-repository ppa:kdenlive/kdenlive-stable`
 - `sudo apt update`
@@ -158,7 +163,7 @@ If you consider removing it, you can use this code to block access again.
 - `sudo apt install kdenlive`
 
 ![Kdenlive](https://raw.githubusercontent.com/devrimmehmet/Ubuntu/main/Images/Kdenlive.png)
-## FileZilla [SOURCE](https://websetnet.net/tr/how-to-install-filezilla-on-ubuntu-20-10-transfer-files/)
+### FileZilla [SOURCE](https://websetnet.net/tr/how-to-install-filezilla-on-ubuntu-20-10-transfer-files/)
 
 ```BASH
 
@@ -171,5 +176,6 @@ sudo apt install filezilla
 ```
 
 ![FileZilla](https://raw.githubusercontent.com/devrimmehmet/Ubuntu/main/Images/filezilla.png)
+
 
 
