@@ -148,9 +148,9 @@ Kaldırmayı düşünürseniz tekrar erişim engellemek için bu kodu kullanabil
 
 ### OBS Studio (Open Broadcaster Software) Kurulumu [Kaynakça](https://obsproject.com/download#linux)
 
-- `_sudo add-apt-repository ppa:obsproject/obs-studio_`
-- `_sudo apt update_`
-- `_sudo apt install ffmpeg obs-studio_`
+- `sudo add-apt-repository ppa:obsproject/obs-studio`
+- `sudo apt update`
+- `sudo apt install ffmpeg obs-studio`
 
 ![OBS Studio](https://raw.githubusercontent.com/devrimmehmet/Ubuntu/main/Images/OBS.png)
 
