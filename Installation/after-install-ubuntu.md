@@ -149,9 +149,9 @@ If you consider removing it, you can use this code to block access again.
 
 ### OBS Studio (Open Broadcaster Software) [Source](https://obsproject.com/download#linux)
 
-- `_sudo add-apt-repository ppa:obsproject/obs-studio_`
-- `_sudo apt update_`
-- `_sudo apt install ffmpeg obs-studio_`
+- `sudo add-apt-repository ppa:obsproject/obs-studio`
+- `sudo apt update`
+- `sudo apt install ffmpeg obs-studio`
 
 ![OBS Studio](https://raw.githubusercontent.com/devrimmehmet/Ubuntu/main/Images/OBS.png)
 
