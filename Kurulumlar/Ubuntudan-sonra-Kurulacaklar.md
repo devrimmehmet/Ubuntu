@@ -5,45 +5,77 @@
 ## Başlamadan Önce
 ```BASH
 
+######  Bu komutu, sisteminizdeki paketleri kullandığınız dağıtımdaki programların güncel sürümlerine yükseltmek veya tümüyle yeni bir Debian sürümüne yükseltme yapmak amacıyla kullanabilirsiniz.
 sudo apt update
+
+######  Güncel debian distrolarında (bkz: sudo apt upgrade) olarak verilmesi de mubah olan sistem güncelleme komutudur.
 sudo apt upgrade
 
 ```
 ## Başlat çubuğu olarak anılan Dock Panelle ilgili
 ```BASH
-
+######  Uygulamaları simge durumuna küçültebilmenizi sağlar.
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+
+######  Uygulamalar arasında scrool tuşu (farenin tekerlek tuşu) ile geçiş yapabilmenizi sağlar.
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
 ```
 ## Git Kurulumu
 ```BASH
 
+######  Git paketini kurar. '-y' ise size soru sormadan herşeye onay vermesi için eklenir.
 sudo apt install git -y
+
+######  Git için email adresi belirlemenizi sağlar.
 git config --global user.email "devrimmehmet@gmail.com"
+
+######  Git için isminizi belirlemenizi sağlar.
 git config --global user.name "Devrim Mehmet Pattabanoğlu"
 
 ```
 
 ## Apache2 Kurulumu
 ```BASH
-
+######  Apache2 paketinin kurulumunu yapar.
 sudo apt install apache2 apache2-utils -y
+
+######  Apache2 için varsayılan dizindeki index.html dosyasını siler.
 sudo rm -f /var/www/html/index.html
+
+###### Apache2'nin sistem başlangıcında kendiliğinden açılmasını istiyorsanız bu komutu kullanın.
 sudo systemctl enable apache2
+
+###### Apache2'nin yeniden başlamasını sağlar.
 sudo service apache2 restart
+
+###### Kullanıcı hesabınızı www-data grubuna ekler.
 sudo adduser $USER www-data
+
+###### Kullanıcı hesabınızı ve www-data grubunu ilgili dizin için yönetici yapar.
 sudo chown -R $USER:www-data /var/www/html/
+
+###### İlgili dizine html ve adminer klasörünü ekler.
 mkdir /var/www/html/adminer
+
+###### İlgili dizine adminer'in son sürümünü index.php adında yükler.
 wget -O /var/www/html/adminer/index.php https://www.adminer.org/latest.php
 
 ```
-## MariaDB Kurulumu
+## MariaDB Kurulumu [Kaynakça](http://www.yucelalkan.com/ubuntu-mysql-yapilandirmasi)
+
 ```BASH
 
+###### MariaDB kurulumunu yapar.
 sudo apt install mariadb-server mariadb-client -y
+
+###### MariaDB servislerini bilgisayar açıldığında çalışmasını sağlar.
 sudo systemctl enable mariadb
+
+###### MariaDB servislerini yeniden başlatır.
 sudo service mariadb restart
+
+###### MariaDB XXXXXXXXXXXXXXXXXXX 
 sudo mysql_secure_installation
 
 ```
@@ -52,7 +84,10 @@ sudo mysql_secure_installation
 
 ```BASH
 
+###### Mysql kullanıcı şifresi değiştirme
 sudo mysql -u root -p
+
+###### Mysql portalına geçtiğiniz için aşağıdaki komutu topluca çalıştırıp en son exit ile çıkış yapabilirsiniz.
     create user 'dbadmin'@'localhost' identified by 'dbadmin';
     flush privileges;
     exit;
@@ -62,7 +97,7 @@ sudo mysql -u root -p
 
 ## Bazı Uygulamaları topluca kurma
 ```BASH
-
+###### Aşağıdaki komuttaki install'dan sonra geçen her bir anahtar kelime kurulacak program ismidir. '-y' ise size onay sormadan kurmanızı sağlar.
 sudo apt install composer npm guake* pv meld vim axel net-tools caffein* vlc chromium-browser magic-wormhole gnome-sushi -y
 
 ```
@@ -148,9 +183,9 @@ Kaldırmayı düşünürseniz tekrar erişim engellemek için bu kodu kullanabil
 
 ### OBS Studio (Open Broadcaster Software) Kurulumu [Kaynakça](https://obsproject.com/download#linux)
 
-- `sudo add-apt-repository ppa:obsproject/obs-studio`
-- `sudo apt update`
-- `sudo apt install ffmpeg obs-studio`
+- `_sudo add-apt-repository ppa:obsproject/obs-studio_`
+- `_sudo apt update_`
+- `_sudo apt install ffmpeg obs-studio_`
 
 ![OBS Studio](https://raw.githubusercontent.com/devrimmehmet/Ubuntu/main/Images/OBS.png)
 
