@@ -74,6 +74,8 @@ sudo service apache2 restart
 # Dash to dock için ayarlar
 ## Bu kod, Dash to Dock'un varsayılan konumunu "ORTA ALT" olarak değiştirir.
 gsettings set org.gnome.shell.extensions.dash-to-dock dock-position 'BOTTOM'
+## Bu kod, Dash to Dock'un içindeki arama çubuğunun varsayılan konumunu "SOL ALT" olarak değiştirir.
+gsettings set org.gnome.shell.extensions.dash-to-dock show-apps-at-top true
 ## Dock ünitesinde program simgesine tıklayınca küçült/büyült
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 ## Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
