@@ -81,6 +81,9 @@ gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 ## Dock ünitesinde program simgesinde tekeri çevirince pencelere arasında gezin
 gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windows'
 
+# Ubuntunun uyku moduna geçmesini engeller.
+sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
+
 ## Kurulum sonrasında varsa gereksiz paketleri temizle
 sudo apt autoremove
 
