@@ -86,4 +86,4 @@ sudo apt autoremove
 
 echo "\n\n\n=== KURULUM TAMAMLANDI===\n\n\n"
 
-echo "\n\n\n=== Bu Paketler Nuri Akman tarafından hazırlanmış Oman Kayı'ya ait repoya eklenmiş ve Devrim Mehmet Pattabanoğlu tarafından kişisel kullanım için düzenlenmiştir.===\n\n\n"
+echo "\n\n\n=== Bu Paketler Nuri Akman tarafından hazırlanmış Osman Kayı'ya ait repoya eklenmiş ve Devrim Mehmet Pattabanoğlu tarafından kişisel kullanım için düzenlenmiştir.===\n\n\n"
