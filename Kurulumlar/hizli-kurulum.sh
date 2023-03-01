@@ -84,9 +84,41 @@ gsettings set org.gnome.shell.extensions.dash-to-dock scroll-action 'cycle-windo
 # Ubuntunun uyku moduna geçmesini engeller.
 sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target
 
+# Ekstra Programlar
+## Obs studio paketlerini ubuntunuza dahil eder.
+sudo add-apt-repository ppa:obsproject/obs-studio
+## Depolarda yer alan paketlerin güncel listesini indir.
+sudo apt update
+## Obs studio ve ffmpeg paketini yükler.
+sudo apt install ffmpeg obs-studio
+
+
+## Kdenlive paketlerini ubuntunuza dahil eder.
+sudo add-apt-repository ppa:kdenlive/kdenlive-stable
+## Depolarda yer alan paketlerin güncel listesini indir.
+sudo apt update
+## Kdenlive paketini yükler.
+sudo apt install kdenlive
+
+## Depolarda yer alan paketlerin güncel listesini indir.
+sudo apt update
+## Depolarda yer alan paketleri güncelleştir.
+sudo apt upgrade
+## Filezilla paketini ubuntunuza dahil eder.
+sudo add-apt-repository ppa:sicklylife/filezilla
+## Depolarda yer alan paketlerin güncel listesini indir.
+sudo apt update
+## Filezilla paketini bilgisayarınıza yükler.
+sudo apt install filezilla
+
+
+
+
+
+
 ## Kurulum sonrasında varsa gereksiz paketleri temizle
 sudo apt autoremove
 
 echo "\n\n\n=== KURULUM TAMAMLANDI===\n\n\n"
 
-echo "\n\n\n=== Bu Paketler Nuri Akman tarafından hazırlanmış Osman Kayı'ya ait repoya eklenmiş ve Devrim Mehmet Pattabanoğlu tarafından kişisel kullanım için düzenlenmiştir.===\n\n\n"
+echo "\n\n\n=== Bu hazır kurulum paketi Nuri Akman tarafından hazırlanmış Osman Kayı'ya ait repoya eklenmiş ve Devrim Mehmet Pattabanoğlu tarafından çatallanıp kişisel kullanım için düzenlenmiştir.===\n\n\n"
